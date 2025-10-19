@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chúc Mừng 20-10 💖</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: linear-gradient(to bottom right, #ffe6f2, #ffb3d9);
+      font-family: "Comic Sans MS", cursive;
+      text-align: center;
+      color: #c70039;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 60px;
+      margin-top: 100px;
+      text-shadow: 2px 2px 8px white;
+      animation: pulse 2s infinite;
+      position: relative;
+      z-index: 2; /* đảm bảo chữ nằm trên trái tim */
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-top: 15px;
+      color: #ff0066;
+      text-shadow: 1px 1px 6px white;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Trái tim to đặt phía sau chữ */
+    .heart {
+      position: absolute;
+      top: 48%;
+      left: 50%;
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      animation: beat 1.2s infinite;
+      opacity: 0.3;
+      z-index: 1; /* trái tim nằm dưới chữ */
+    }
+
+    .heart::before,
+    .heart::after {
+      content: "";
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -100px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: 100px;
+      top: 0;
+    }
+
+    /* Hoa hồng hai bên */
+    .rose {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background: radial-gradient(circle at 20px 20px, #ff6699, #cc0066);
+      border-radius: 50%;
+      box-shadow: 0 0 30px #ff99cc;
+      transform: scale(0);
+      animation: bloom 3s forwards;
+      z-index: 2;
+    }
+
+    .rose.left {
+      left: 15%;
+      top: 55%;
+      animation-delay: 1s;
+    }
+
+    .rose.right {
+      right: 15
